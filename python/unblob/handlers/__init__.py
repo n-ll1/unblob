@@ -11,6 +11,7 @@ from .archive import (
     sevenzip,
     stuffit,
     tar,
+    tsh,
 )
 from .archive import (
     zip as ziparchive,
@@ -121,6 +122,7 @@ BUILTIN_HANDLERS: Handlers = (
     uzip.UZIPHandler,
     erofs.EROFSHandler,
     partclone.PartcloneHandler,
+    tsh.TSHHandler,
 )
 
 BUILTIN_DIR_HANDLERS: DirectoryHandlers = (
